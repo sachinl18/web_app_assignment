@@ -25,3 +25,13 @@ stages:
         pathtoPublish: '$(System.DefaultWorkingDirectory)'
         artifactName: 'node-app-artifact'
         publishLocation: 'Container'
+
+- stage: Test
+  jobs:
+  - job: TestJob
+    steps:
+    - script: npm install
+      displayName: 'Install dependencies for testing'
+
+    - script: npm test
+      displayName: 'Run unit tests'
