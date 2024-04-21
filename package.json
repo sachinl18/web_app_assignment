@@ -5,10 +5,21 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "echo 'Build command placeholder'"
+    "build": "echo 'Build command placeholder'",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2"
   }
 }
