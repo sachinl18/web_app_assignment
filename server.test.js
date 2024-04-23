@@ -18,4 +18,3 @@ describe('POST /submit', () => {
     expect(res.text).toContain('Hello DevOps');
   });
 });
-
